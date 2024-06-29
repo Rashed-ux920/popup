@@ -38,7 +38,13 @@
 @media (max-width: 740px) {
     .btn {
         left: 25%;
-        top: 90%;
+        top: 70%;
+    }
+    .getinfoopen{
+        visibility: visible;
+        top: 0%;
+        transform: translate(-40%, -40%) scale(0.5);
+
     }
 }
 
@@ -56,7 +62,7 @@ header {
 .letter {
     display: flex;
     justify-content: space-between;
-    padding: 1em 0.5em;
+    padding: 0.6em 0.5em;
     font-size: 1.8rem;
     font-weight: 600;
     color: var(--linear-color1);
@@ -65,11 +71,11 @@ header {
 
 .getinfo {
     background: var(--main-color);
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     visibility: hidden;
     position: absolute;
     transform: translate(-70%, 0%) scale(0);
-    transition: transform 2s, top 2s;
+    transition: transform 1ms, top 1ms;
     left: 40%;
     top: 0%;
 }
@@ -138,6 +144,5 @@ header {
     border: 0;
     border-radius: 10px;
     background: linear-gradient(var(--orange-color3), var(--linear-color1));
-    transition-duration: 1s;
     margin-bottom: 0.5em;
 }
