@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+    <div class="container">
+        <button type="button" class="btn"> 
+            <span><i class="fa-solid fa-plus"></i></span>Add Task
+        </button>
+        <div class="getinfo" id="poppup">
+            <form action="/" method="get">
+                <div class="letter">
+                    <header>Create New Task</header>
+                    <button type="button" >
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+                <div class="toinfo">
+                    <h4>For 
+                        <input type="text" name="member" id="member" placeholder="Member"> 
+                        in 
+                        <button type="button" class="btn1">Project</button>
+                    </h4>
+                </div>
+                <div class="textareaforuser">
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Description"></textarea>
+                </div>
+                <div class="midelbar">
+                    <div>
+                        <i class="fa-solid fa-a"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <i class="fa-regular fa-address-book"></i>
+                </div>
+                <div class="status">
+                    <select class="option" name="status" id="status">
+                        <option value="1">To Do</option>
+                        <option value="2">In Progress</option>
+                        <option value="3">Done</option>
+                    </select>
+                    <div class="status">
+                        <button type="submit" class="option">ADD</button>
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

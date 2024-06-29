@@ -1,0 +1,143 @@
+:root {
+    --main-color: #f7f0f0;
+    --linear-color1: #f72f54;
+    --linear-color2: #f77272;
+    --orange-color3: #f8855c;
+    --yellow-color4: #f2DA63;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    padding: 10px 40px;
+    position: absolute;
+    background: #f26363;
+    border: var(--yellow-color4) solid 1px;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    top: 90%;
+    left: 80%;
+    color: var(--main-color);
+}
+
+.btn span {
+    margin-right: 5px;
+}
+
+@media (max-width: 740px) {
+    .btn {
+        left: 25%;
+        top: 90%;
+    }
+}
+
+header {
+    text-transform: capitalize;
+    position: relative;
+}
+
+.letter button {
+    color: #f72f54;
+    border: 0;
+    width: 100px;
+}
+
+.letter {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0.5em;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--linear-color1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.getinfo {
+    background: var(--main-color);
+    padding-bottom: 10px;
+    visibility: hidden;
+    position: absolute;
+    transform: translate(-70%, 0%) scale(0);
+    transition: transform 2s, top 2s;
+    left: 40%;
+    top: 0%;
+}
+
+.getinfoopen {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.toinfo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.toinfo h4 {
+    margin: 10px;
+    color: #fff;
+    background: var(--orange-color3);
+}
+
+.toinfo h4 input, .toinfo h4 button {
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px solid var(--linear-color1);
+    box-shadow: 0 1px 1px 1px linear-gradient(var(--orange-color3), var(--linear-color1));
+}
+
+.textareaforuser {
+    background: linear-gradient(var(--orange-color3), var(--linear-color1));
+    text-align: center;
+    height: 15em;
+    margin: 0.6em;
+}
+
+.textareaforuser textarea {
+    margin: 1em;
+    padding: 3em 2em 1em;
+    width: 900px;
+    border-radius: 10px;
+}
+
+.midelbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em;
+    background: linear-gradient(var(--orange-color3), var(--yellow-color4));
+    margin: 0.5em;
+    color: var(--linear-color1);
+    font-size: 1.5em;
+}
+
+.status {
+    text-align: center;
+}
+
+.option {
+    padding: 0.6em 0.5em;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(var(--orange-color3), var(--linear-color1));
+    transition-duration: 1s;
+    margin-bottom: 0.5em;
+}
